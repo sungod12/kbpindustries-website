@@ -3,9 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
@@ -33,6 +31,13 @@ body {
 }
 image {
   max-width: 100%;
+  image-rendering: pixelated;
+}
+.moto:hover {
+  animation: zoom ease-in 0.5s forwards;
+}
+button:hover {
+  background-color: #42d889;
 }
 .heading {
   color: #560d90;
@@ -48,12 +53,13 @@ image {
 }
 .moto-container {
   color: white;
-  font-weight: bold;
+  font-weight: 900;
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: 4rem auto;
   text-decoration: underline;
+  cursor: pointer;
 }
 button {
   display: flex;
@@ -85,7 +91,7 @@ button {
   width: 12rem;
 }
 .ballcock-image:hover {
-  transform: scale(130%, 130%);
+  animation: slideup 1s ease-in-out, zoom 1s ease-in-out 1s;
 }
 .feature {
   color: #af10bd;
@@ -150,5 +156,21 @@ ol {
 @media (min-width: 1600px) {
   html {
     font-size: 30px;
+  }
+}
+@keyframes zoom {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(125%, 115%);
+  }
+}
+@keyframes slideup {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateY(-10px);
   }
 }

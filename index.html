@@ -24,7 +24,7 @@
       </div>
     </section>
     <p class="line"></p>
-    <section class="page-2" id="page-2">
+    <section class="page-2" >
       <h1 class="heading">our products</h1>
       <div class="container product-container">
         <div class="image-container">
@@ -143,9 +143,9 @@
     </footer>
     <script>
       function scroller(){
-        let element=document.getElementById("page-2");
-        element.scrollIntoView();
+        document.getElementsByClassName('page-2')[0].scrollIntoView({ behavior: 'smooth' });
       }
+      
      
     </script>
   </body>
