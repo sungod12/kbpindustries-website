@@ -91,7 +91,7 @@ button {
   width: 12rem;
 }
 .ballcock-image:hover {
-  animation: slideup 1s ease-in-out, zoom 1s ease-in-out 1s;
+  animation: slideup 1s ease-in-out forwards, zoom 1s ease-in-out 1s forwards;
 }
 .feature {
   color: #af10bd;
