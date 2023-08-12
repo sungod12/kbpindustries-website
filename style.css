@@ -40,7 +40,7 @@ button:hover {
   background-color: #42d889;
 }
 .heading {
-  color: #560d90;
+  color: #3a1c3d;
   font-style: normal;
   font-size: 2rem;
   text-align: center;
@@ -94,11 +94,11 @@ button {
   animation: slideup 1s ease-in-out forwards, zoom 1s ease-in-out 1s forwards;
 }
 .feature {
-  color: #af10bd;
+  color: #3a1c3d;
 }
 .description,
 li {
-  color: #a316af;
+  color: #3a1c3d;
   text-align: justify;
 }
 ol {
@@ -116,6 +116,9 @@ ol {
 .footer-logo {
   margin-bottom: 1rem;
   width: 3rem;
+}
+.custom{
+  text-indent: 2rem;
 }
 
 @media (min-width: 768px) {
